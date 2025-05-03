@@ -952,10 +952,10 @@ static void notify_pd_status(struct osdp_pd *pd, bool is_online)
 	struct osdp *ctx = pd_to_osdp(pd);
 	struct osdp_event evt;
 
-/* 	if (!ctx->event_callback ||
+ 	if (!ctx->event_callback ||
 	    !ISSET_FLAG(pd, OSDP_FLAG_ENABLE_NOTIFICATION)) {
 		return;
-	} */
+	} 
 
 	evt.type = OSDP_EVENT_NOTIFICATION;
 	evt.notif.type = OSDP_EVENT_NOTIFICATION_PD_STATUS;
