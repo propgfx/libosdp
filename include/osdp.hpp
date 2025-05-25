@@ -146,6 +146,11 @@ public:
 		osdp_pd_set_command_callback(_ctx, cb, args);
 	}
 
+	osdp_t* get_ctx() const
+	{
+		return _ctx;
+	}
+
 	[[deprecated]]
 	int notify_event(struct osdp_event *event)
 	{
