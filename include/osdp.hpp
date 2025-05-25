@@ -17,6 +17,7 @@ namespace OSDP {
 
 class OSDP_EXPORT Common {
 public:
+	osdp_t* get_ctx() { return _ctx; }
 	Common() : _ctx(nullptr) {}
 
 	void logger_init(const char *name, int log_level,
